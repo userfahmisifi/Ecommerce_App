@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="navbar">
+           <div class="container"> 
+            <div class="navbar-content">
+                <a href="index.html" class="navbar-logo">shopping cart</a>
+                <nav>
+                    <ul class="nav-list"> 
+                        <li><a href="login.html" >sign in</a></li>
+                        <li><a href="register.html">sign up</a></li>
+                    </ul>
+                    <ul class="nav-list">
+                    <li><a href="profile.html" id="username"></a></li>
+                    <li class="cart">
+                        <span class="cart-badge"></span>
+                        <i class="cart-icon fa fa-shopping-cart"></i>
+                        <div class="cart-products">
+                            <div class="items"></div>
+                            <a href="productsCart.html" class="link">view all products</a>
+                        </div>
+                    </li>
+                    <li class="favorite"><a href="favoriteProducts.html">favorite</a></li>
+                    <li class="favorite"><a href="myProducts.html">my products</a></li>
+                    <li><a href="register.html" id="logout">logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+           </div>  
+        </header>
+        <section class="home">
+            <div class="container">
+                <div class="home-left">
+                    <div class="products"></div>
+                    <ul class="pagination">
+                       
+                    </ul>
+                </div>
+                 <div class="select">
+                    <select class="select-category">
+                        <option hidden>search by category</option> 
+                        <option>laptop</option> 
+                        <option>phone</option> 
+                        
+                    </select>
+                    <select class="select-type" disabled>
+                        <option hidden>search by type</option> 
+                        
+                        
+                        
+                    </select>
+                 </div>
+            </div>
+            <a href="createProduct.html" class="create-product">create  product<i class="fa fa-plus"></i></a>
+        </section>
+     <script src="js/user.js"></script>
+     <script src="js/data.js"></script>
+     <script src="js/cartMenu.js"></script>
+     <script src="js/script.js"></script>
+    </body>
+</html>

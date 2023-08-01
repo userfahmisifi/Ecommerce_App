@@ -1,0 +1,31 @@
+.create-item {
+    margin-top:70px;
+}
+.create-item form input,
+.create-item form .select-type{
+    display: block;
+    width: 80%;
+    height:30px;
+    margin:10px auto;
+    padding: 4px;
+    border:1px solid #d8cdcd;
+    outline:0;
+}
+.create-item form input[type=file]{
+    display: none;;
+}
+.create-item form label{
+    display: inline-block;
+    background:#586fc3;
+    margin:0 10%;
+    padding:10px;
+    color: #fff;
+    cursor: pointer;
+}
+.create-item form input[type=submit]{
+    background: #37e617;
+    color:#fff;
+    text-transform: capitalize;
+    font-size:17px;
+    cursor: pointer;
+}

@@ -1,0 +1,255 @@
+*{
+    padding:0 ;
+    margin:0 ;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button,select,input{
+    font-family: inherit;
+}
+.container {
+    width: 80%;
+    margin:auto;
+}
+/*Navbar*/
+.navbar{
+    background: #333;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index:30;
+}
+
+.navbar a{
+    color: #fff;
+    display: block;
+    padding:18px 0;
+}
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list li.cart{
+    
+    position: relative;
+    
+}
+.nav-list li{
+    margin:0 14px; 
+}
+.cart-icon{
+    color: #fff;
+    font-size:27px;
+    padding:7px 0;
+    cursor: pointer;
+}
+.cart-products{
+    position: absolute;
+    left:-82px;
+    width:200px;
+    background:#f1eded;
+    padding:10px;
+    display: none;
+}
+.cart-products .items p{
+    margin-bottom:10px;
+}
+.cart-products .items p span{
+    margin-left:20px;
+    background: #4139b5;
+    display: inline-block;
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height:30px;
+    color: #fff;
+    border-radius: 50%;
+}
+.cart-products .link{
+    background: #33bf37;
+    text-align: center;
+    margin-top: 20px;
+}
+.cart-badge{
+    width: 20px;
+    height: 20px;
+    background: red;
+    display: block;
+    position: absolute;
+    
+    right: -10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:20px;
+    color: #fff;
+    display: none;
+}
+/*Form*/
+.section-form{
+    background:#e8e8e8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding:30px 10px;
+    color: #333;
+}
+.section-form-title{
+     text-transform: capitalize;
+     text-align:center;
+}
+.section-form input{
+    display:block;
+    margin: auto;
+    width: 350px;
+    padding:10px;
+    outline:0;
+    margin:7px 0;
+}
+.section-form input[type="submit"]{
+    background: #9cde7a;
+    border:0;
+    outline:0;
+    color: #fff;
+    cursor:pointer;
+}
+/*Products*/
+.home{
+    margin-top: 80px;
+}
+.home input[type=text]{
+    margin-top:10px;
+    width:100%;
+    outline: 0;
+    padding:7px;
+    border: 1px solid #e2e2e2;
+}
+.home .container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.product-item{
+    display:flex;
+    border:1px solid #ddd;
+    margin-bottom:10px;
+}
+.product-item-img{
+   width:30%;
+   border: 1px solid #C1C1C1;
+   margin-right:10px;
+   height:150px;
+   width:170px;
+}
+.product-item-info{
+    max-width: 45%;
+}
+.product-item-info .title{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.product-item-edit{
+    width:100px;
+    height:30px;
+    background: #4e5c4e;
+    border:0;
+    color: #fff;
+    text-transform:capitalize;
+    font-size:15px;
+    margin-top:10px;
+}
+.product-item-actions{
+    flex:1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.product-item-actions .add-to-cart{
+    width:100px;
+    height:30px;
+    background-color: #33bf37;
+    color: #fff;
+    text-transform: capitalize;
+    border: 0;
+    margin-bottom:10px;
+}
+.product-item-actions .add-to-cart,
+.product-item-actions .add-to-favorite{
+    cursor: pointer;
+    
+}
+.product-item-actions .add-to-favorite{
+    font-size: 30px;
+} 
+
+.home-left{
+    width: 60%;
+} 
+.home .select{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right:10%;
+}
+.home .select-category,
+.home .select-type{
+    margin-bottom:30px;
+    height:30px;
+    width:300px;
+    border: 1px solid #bbb6b6;
+    outline:0;
+    cursor: pointer;
+}  
+/* plus icon link */
+.create-product{
+    position:fixed;
+    bottom: 40px;
+    right:40px;
+    width: 200px;
+    height: 40px;
+    background:#4139b5;
+    text-align: center;
+    color: #fff;
+    border-radius:20px;
+    text-transform: capitalize;
+    display: none;
+}
+.create-product i{
+    margin-left:10px;
+    line-height:40px;
+}
+
+/*pagination*/
+.pagination {
+    display: flex;
+    margin-bottom:20px ;
+    justify-content: center;
+    
+    
+}
+.pagination li {
+    background: #bac5ba;
+    margin-right:10px;
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height:30px;
+    cursor: pointer;
+}

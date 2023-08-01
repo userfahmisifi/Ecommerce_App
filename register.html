@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Register page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/register.css">
+    </head>
+    <body>
+        <header class="navbar">
+           <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="navbar-logo">shopping cart</a>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="login.html">sign in</a></li>
+                        <li><a href="register.html">sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+           </div>
+        </header>
+        <section class="section-form">
+            <h2 class="section-form-title" >register user</h2>
+            <form  novalidate>
+                <input type="text" placeholder="Enter Username" id="username" autocomplete="off"/>
+                <input type="email" placeholder="Enter Email" id="email" autocomplete="off"/>
+                <input type="password" placeholder="Enter Password" id="password"/>
+                <input type="submit" value="sign up" id="signup"/>
+            </form>
+        </section>
+     <script src="js/register.js"></script>
+    </body>
+</html>
